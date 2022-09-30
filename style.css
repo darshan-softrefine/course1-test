@@ -42,15 +42,36 @@ body {
     background-color: white;
 }
 
+.customer {
+    display: flex;
+}
+
 .customer-ig {
     width: 1.5rem;
     height: 1.5rem;
     border-radius: 1rem;
     border: 3px solid #fdf2e9;
-    margin-right: -1rem;
+    margin-right: -0.8rem;
 }
 
-.customer-ig:nth-child(4) {}
+.diff {
+    width: 1.5rem;
+    height: 1.5rem;
+    border-radius: 1rem;
+    border: 3px solid #fdf2e9;
+    margin-right: -1rem;
+    background-image: linear-gradient(#18d39ea1, #18d39e31), url("./img/customer-4.jpg");
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.rnumber {
+    color: white;
+    font-weight: bold;
+    font-size: 0.7rem;
+}
 
 .card-text {
     color: #363C4F;
@@ -173,8 +194,9 @@ body {
 
 .header-txt {
     border-bottom: solid 1px #868686;
-    /*  margin-left: 3rem;
-    margin-right: 1.5rem; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
 .header-txt h3 {
