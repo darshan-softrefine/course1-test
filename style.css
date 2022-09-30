@@ -181,7 +181,7 @@ body {
     font-size: 14px;
 }
 
-.main-area-second-right ul li::marker {
+/* .main-area-second-right ul li::marker {
     color: red;
     width: 2rem;
 }
@@ -189,7 +189,7 @@ body {
 .main-area-second-right ul li:nth-child(2)::marker {
     color: green;
     width: 2rem;
-}
+} */
 
 
 .header-txt {
@@ -458,6 +458,7 @@ body {
     top: 25%;
     transform: translate(-50%, 0);
     left: 50%;
+    color: white;
 }
 
 .profile-pct {
@@ -529,4 +530,47 @@ body {
 .activity {
     margin-left: 1.5rem;
     margin-right: 1.5rem;
+}
+
+.timeline {
+    position: relative;
+    margin: 0 auto;
+    list-style: none;
+    padding: 1rem 2rem 2rem 2rem;
+}
+
+.timeline::after {
+    content: '';
+    position: absolute;
+    width: 1px;
+    background-color: #C1C1C1;
+    top: 0;
+    bottom: 0;
+    top: 2rem;
+    bottom: 2rem;
+}
+
+.tnitem {
+    padding-left: 20px;
+}
+
+.tnitem::before {
+    content: '';
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    border-radius: 7.5px;
+    /* box-shadow: inset 0px 0px 0px 3px #59a8f1; */
+    background-color: #59a8f1;
+    position: absolute;
+    left: 9%;
+    z-index: 1;
+}
+
+.tnitem:nth-child(2)::before {
+    background-color: #ffae23;
+}
+
+.tnitem:nth-child(3)::before {
+    background-color: #2ce169;
 }
