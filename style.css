@@ -535,12 +535,37 @@ body {
     margin-right: 1.5rem;
 }
 
+.timeline-container {
+    overflow-y: scroll;
+    height: 450px;
+}
+
+.timeline-container::-webkit-scrollbar {
+    width: 20px;
+}
+
+.timeline-container::-webkit-scrollbar-track {
+    background-color: transparent;
+}
+
+.timeline-container::-webkit-scrollbar-thumb {
+    background-color: #ffa429;
+    border-radius: 20px;
+    border: 6px solid transparent;
+    background-clip: content-box;
+}
+
+.timeline-container::-webkit-scrollbar-thumb:hover {
+    background-color: #ffa429;
+}
+
 .timeline {
     position: relative;
     margin: 0 auto;
     list-style: none;
     padding: 1rem 2rem 2rem 2rem;
 }
+
 
 .timeline::after {
     content: '';
