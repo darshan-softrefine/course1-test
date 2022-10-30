@@ -17,6 +17,11 @@ body {
     height: 100vh;
 }
 
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4rem;
+}
 
 
 .navigation {
