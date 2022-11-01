@@ -1,8 +1,24 @@
+/* color code */
+
 $color-white: #ffffff;
 $bg-color-primary: #f3f6fd;
 $header-heading: #272727;
 $heading-primary: #454545;
-$nav-icon-color: #454545;
-$card2-color:#fee4cb;
-$card3-color:#baf3d2;
-$card4-color:#ffd3e2;
+$heading-secondary-color: #454545;
+$header-plus-container: #1B182B;
+$nav-icon-color: #9B9B9A;
+$card2-color: #fee4cb;
+$card3-color: #baf3d2;
+$card4-color: #ffd3e2;
+$card1-sec-color: #2bc8ff;
+$card2-sec-color: #ff723b;
+$card3-sec-color: #02d052;
+$card4-sec-color: #ff72ac;
+
+
+html {
+    box-sizing: border-box;
+    /* font-size: 62.5%; */
+}
+
+$bp-largest: 76.25rem; //1200px
