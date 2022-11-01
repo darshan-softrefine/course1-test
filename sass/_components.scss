@@ -8,6 +8,7 @@
 
     @media only screen and (max-width:42rem) {
         grid-column: 1;
+        position: relative;
     }
 
     &__title {
@@ -16,6 +17,10 @@
         font-size: 1.6rem;
         position: relative;
         left: 3.5rem;
+
+        @media only screen and (max-width:42rem) {
+            left: 1.5rem;
+        }
     }
 }
 
@@ -70,7 +75,32 @@
     display: flex;
     gap: 1rem;
     align-items: center;
-    padding-right: 2rem
+    padding-right: 2rem;
+
+    @media only screen and (max-width: 42rem) {
+        position: absolute;
+        right: 0rem;
+    }
+}
+
+.micon-container {
+    width: 2rem;
+    height: 2rem;
+    padding: 0.2rem;
+    background-color: black;
+    border-radius: 50%;
+    display: none;
+
+    &__icons {
+        stroke: white;
+        width: 1.2rem;
+        height: 1.2rem;
+        padding-top: 0.1rem;
+    }
+
+    @media only screen and (max-width: 42rem) {
+        display: block;
+    }
 }
 
 .picon-container {
@@ -202,6 +232,10 @@
                 background-color: black;
                 border-radius: 50%;
                 padding: 1rem;
+
+                @media only screen and (max-width:42rem) {
+                    padding: 00.5rem;
+                }
             }
 
             &__icon {

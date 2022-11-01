@@ -22,3 +22,14 @@ html {
 }
 
 $bp-largest: 76.25rem; //1200px
+
+@media only screen and (max-width:42rem) {
+
+    #search {
+        position: absolute;
+        bottom: 0;
+        top: 4rem;
+        visibility: hidden;
+    }
+
+}

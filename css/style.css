@@ -3,6 +3,13 @@ html {
   box-sizing: border-box;
   /* font-size: 62.5%; */ }
 
+@media only screen and (max-width: 42rem) {
+  #search {
+    position: absolute;
+    bottom: 0;
+    top: 4rem;
+    visibility: hidden; } }
+
 .header {
   background-color: #f3f6fd;
   grid-column: 2/4;
@@ -11,13 +18,17 @@ html {
   align-items: center; }
   @media only screen and (max-width: 42rem) {
     .header {
-      grid-column: 1; } }
+      grid-column: 1;
+      position: relative; } }
   .header__title {
     color: #272727;
     font-weight: bold;
     font-size: 1.6rem;
     position: relative;
     left: 3.5rem; }
+    @media only screen and (max-width: 42rem) {
+      .header__title {
+        left: 1.5rem; } }
 
 .search {
   flex: 0 0 24%;
@@ -56,6 +67,26 @@ html {
   gap: 1rem;
   align-items: center;
   padding-right: 2rem; }
+  @media only screen and (max-width: 42rem) {
+    .navicon-container {
+      position: absolute;
+      right: 0rem; } }
+
+.micon-container {
+  width: 2rem;
+  height: 2rem;
+  padding: 0.2rem;
+  background-color: black;
+  border-radius: 50%;
+  display: none; }
+  .micon-container__icons {
+    stroke: white;
+    width: 1.2rem;
+    height: 1.2rem;
+    padding-top: 0.1rem; }
+  @media only screen and (max-width: 42rem) {
+    .micon-container {
+      display: block; } }
 
 .picon-container {
   width: 1.2rem;
@@ -158,6 +189,9 @@ html {
         background-color: black;
         border-radius: 50%;
         padding: 1rem; }
+        @media only screen and (max-width: 42rem) {
+          .navigation__container__items:first-child {
+            padding: 00.5rem; } }
       .navigation__container__items__icon {
         stroke: #9B9B9A; }
         .navigation__container__items__icon:hover {

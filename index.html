@@ -23,8 +23,9 @@
 <body>
     <div class="container">
         <header class="header">
+
             <h3 class="header__title">Portfolio</h3>
-            <form action="#" class="search">
+            <form action="#" class="search" id="search">
                 <input type="text" class="search__input" placeholder="Search">
                 <button class="search__button">
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
@@ -35,6 +36,18 @@
                 </button>
             </form>
             <div class="navicon-container">
+
+                <button class="micon-container" onclick="showMask();">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                        stroke="currentColor" class="micon-container__icons">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                            d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z" />
+                    </svg>
+
+
+
+                </button>
+
                 <div class="picon-container">
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
                         stroke="currentColor" class="plus-icon">
@@ -56,6 +69,7 @@
                 </div>
             </div>
         </header>
+
         <div class="navigation">
 
             <span class="navigation__humberger">
@@ -427,6 +441,20 @@
         </div>
     </div>
     </div>
+
+    <script>
+
+        function showMask() {
+
+            var node = document.getElementById('search')
+
+            if (node.style.visibility == 'visible') {
+                node.style.visibility = 'hidden';
+            }
+            else
+                node.style.visibility = 'visible'
+        }
+    </script>
 </body>
 
 </html>
