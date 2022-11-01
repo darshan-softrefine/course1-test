@@ -63,6 +63,13 @@
             width: 1.5rem;
             height: 1.5rem;
             stroke: $heading-secondary-color;
+
+            @media only screen and (max-width:42rem) {
+                width: 1.2rem;
+                height: 1.2rem;
+                position: relative;
+                top: 0.8rem;
+            }
         }
     }
 
@@ -89,6 +96,7 @@
     padding: 0.2rem;
     background-color: black;
     border-radius: 50%;
+    border: none;
     display: none;
 
     &__icons {

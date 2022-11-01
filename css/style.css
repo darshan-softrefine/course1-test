@@ -59,6 +59,12 @@ html {
       width: 1.5rem;
       height: 1.5rem;
       stroke: #454545; }
+      @media only screen and (max-width: 42rem) {
+        .search__button-icons {
+          width: 1.2rem;
+          height: 1.2rem;
+          position: relative;
+          top: 0.8rem; } }
   .search:search__button {
     display: none; }
 
@@ -78,6 +84,7 @@ html {
   padding: 0.2rem;
   background-color: black;
   border-radius: 50%;
+  border: none;
   display: none; }
   .micon-container__icons {
     stroke: white;

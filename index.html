@@ -70,6 +70,7 @@
             </div>
         </header>
 
+
         <div class="navigation">
 
             <span class="navigation__humberger">
@@ -447,9 +448,11 @@
         function showMask() {
 
             var node = document.getElementById('search')
+            var nav = document.getElementsByClassName('navigation')
 
             if (node.style.visibility == 'visible') {
                 node.style.visibility = 'hidden';
+
             }
             else
                 node.style.visibility = 'visible'
