@@ -146,7 +146,8 @@ html {
       padding-top: 0rem;
       position: fixed;
       bottom: 0;
-      width: 100%; } }
+      width: 100%;
+      z-index: 1; } }
   .navigation__humberger {
     width: 2.5rem;
     height: 2px;
@@ -217,10 +218,7 @@ html {
   background-color: #ffffff;
   display: flex;
   flex-direction: column;
-  gap: 3.5rem;
-  /*  @media only screen and (max-width:70rem) {
-        padding: 2rem;
-    } */ }
+  gap: 3.5rem; }
   .projectsec__header {
     display: flex;
     justify-content: space-between;
@@ -251,6 +249,9 @@ html {
       @media only screen and (max-width: 70rem) {
         .projectsec__container__left {
           gap: 0.3rem !important; } }
+      @media only screen and (max-width: 42rem) {
+        .projectsec__container__left {
+          flex-wrap: wrap; } }
     .projectsec__container__right {
       display: flex;
       align-items: center;
