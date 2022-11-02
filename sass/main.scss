@@ -27,7 +27,7 @@ body {
         display: grid;
         grid-template-columns: 1fr !important;
         /* grid-template-rows: 80px 1fr 600px; */
-        grid-template-rows: 80px 100px 1fr 600px;
+        grid-template-rows: 80px 1fr 600px 1fr;
     }
 }
 
@@ -45,7 +45,7 @@ body {
 
     @media only screen and (max-width:42rem) {
         grid-column: 1;
-        grid-row: 2/3;
+        grid-row: 4/5;
     }
 }
 
@@ -62,6 +62,6 @@ body {
 
     @media only screen and (max-width:42rem) {
         grid-column: 1;
-        grid-row: 4/5;
+        grid-row: 3/4;
     }
 }
