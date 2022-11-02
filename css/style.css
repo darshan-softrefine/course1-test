@@ -143,7 +143,10 @@ html {
     .navigation {
       flex-direction: row;
       justify-content: center;
-      padding-top: 0rem; } }
+      padding-top: 0rem;
+      position: fixed;
+      bottom: 0;
+      width: 100%; } }
   .navigation__humberger {
     width: 2.5rem;
     height: 2px;
@@ -515,7 +518,7 @@ body {
       display: grid;
       grid-template-columns: 1fr !important;
       /* grid-template-rows: 80px 1fr 600px; */
-      grid-template-rows: 80px 100px 1fr 600px; } }
+      grid-template-rows: 80px 1fr 1fr 100px; } }
 
 .card-container {
   display: flex;
@@ -529,7 +532,15 @@ body {
   @media only screen and (max-width: 42rem) {
     .navigation {
       grid-column: 1;
-      grid-row: 2/3; } }
+      grid-row: 4/5; } }
+
+@media only screen and (max-width: 42rem) {
+  .mobile {
+    display: none; } }
+
+@media only screen and (min-width: 42rem) {
+  .desktop {
+    display: none; } }
 
 .clientmsg {
   background-color: #f3f6fd;
@@ -543,4 +554,4 @@ body {
   @media only screen and (max-width: 42rem) {
     .clientmsg {
       grid-column: 1;
-      grid-row: 4/5; } }
+      grid-row: 3/4; } }

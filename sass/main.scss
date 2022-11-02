@@ -27,7 +27,7 @@ body {
         display: grid;
         grid-template-columns: 1fr !important;
         /* grid-template-rows: 80px 1fr 600px; */
-        grid-template-rows: 80px 100px 1fr 600px;
+        grid-template-rows: 80px 1fr 1fr 100px;
     }
 }
 
@@ -45,7 +45,20 @@ body {
 
     @media only screen and (max-width:42rem) {
         grid-column: 1;
-        grid-row: 2/3;
+        grid-row: 4/5;
+    }
+}
+
+.mobile {
+
+    @media only screen and (max-width:42rem) {
+        display: none;
+    }
+}
+
+.desktop {
+    @media only screen and (min-width:42rem) {
+        display: none;
     }
 }
 
@@ -62,6 +75,6 @@ body {
 
     @media only screen and (max-width:42rem) {
         grid-column: 1;
-        grid-row: 4/5;
+        grid-row: 3/4;
     }
 }
