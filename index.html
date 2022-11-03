@@ -33,6 +33,22 @@
         </button>
     </div>
 
+    <div id="myOverlay" class="overlay">
+        <span class="closebtn" onclick="closeSearch()" title="Close Overlay">×</span>
+        <div class="overlay-content">
+            <form action="#" class="searchform">
+                <input type="text" placeholder="Search.." name="search">
+                <button type="submit">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                        stroke="currentColor" class="w-6 h-6">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                            d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z" />
+                    </svg>
+
+                </button>
+            </form>
+        </div>
+    </div>
 
     <div class="chat-container">
 
@@ -230,7 +246,7 @@
             </form>
             <div class="navicon-container">
 
-                <button class="micon-container" onclick="showMask();">
+                <button class="micon-container" onclick="openSearch();">
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
                         stroke="currentColor" class="micon-container__icons">
                         <path stroke-linecap="round" stroke-linejoin="round"
@@ -658,6 +674,14 @@
 
         function chatboxclose() {
             document.getElementsByClassName('chat-container')[0].style.display = 'none';
+        }
+
+        function openSearch() {
+            document.getElementById("myOverlay").style.display = "block";
+        }
+
+        function closeSearch() {
+            document.getElementById("myOverlay").style.display = "none";
         }
     </script>
 </body>

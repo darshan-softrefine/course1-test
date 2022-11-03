@@ -736,7 +736,7 @@
 
 .chat-container {
     padding-top: 2rem;
-    height: 60%;
+    height: 65%;
     width: 80%;
     z-index: 1;
     background-color: #F2F6FE;
@@ -759,4 +759,85 @@
     &__icon {
         width: 2rem;
     }
+}
+
+
+/*search */
+
+.openBtn {
+    background: #f1f1f1;
+    border: none;
+    padding: 10px 15px;
+    font-size: 20px;
+    cursor: pointer;
+
+    &:hover {
+        background: #bbb;
+    }
+}
+
+.overlay {
+    height: 100%;
+    width: 100%;
+    display: none;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: $background-color_1;
+    background-color: $background-color_2;
+
+    .closebtn {
+        position: absolute;
+        top: 20px;
+        right: 45px;
+        font-size: 60px;
+        cursor: pointer;
+        color: $color_1;
+
+        &:hover {
+            color: $color_2;
+        }
+    }
+
+    input[type=text] {
+        padding: 15px;
+        font-size: 17px;
+        border: none;
+        float: left;
+        width: 80%;
+        background: white;
+
+        &:hover {
+            background: #f1f1f1;
+        }
+    }
+
+    button {
+        float: left;
+        width: 20%;
+        padding: 15px;
+        background: #ddd;
+        font-size: 17px;
+        border: none;
+        cursor: pointer;
+
+        &:hover {
+            background: #bbb;
+        }
+    }
+
+    .searchform {
+        display: flex;
+    }
+
+}
+
+.overlay-content {
+    position: relative;
+    top: 46%;
+    width: 80%;
+    text-align: center;
+    margin-top: 30px;
+    margin: auto;
 }
