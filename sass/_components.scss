@@ -322,12 +322,6 @@
                 gap: 0.3rem !important;
             }
 
-
-            @media only screen and (max-width: 42rem) {
-                display: grid;
-                grid-template-columns: 1fr 1fr;
-            }
-
         }
 
         &__right {
