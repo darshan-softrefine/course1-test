@@ -39,6 +39,9 @@ html {
   position: relative;
   margin-right: auto;
   left: 14%; }
+  @media only screen and (max-width: 75rem) {
+    .search {
+      flex: 0 0 18%; } }
   .search__input {
     font-family: inherit;
     background-color: #ffffff;
@@ -263,6 +266,11 @@ html {
       .projectsec__container__right__appoutline {
         width: 1.5rem;
         height: 1.5rem; }
+  @media only screen and (max-width: 42rem) {
+    .projectsec__counter {
+      background-color: #2BC8FF;
+      border-radius: 50%;
+      padding: 1rem; } }
   .projectsec__counter__number {
     font-weight: 600;
     font-size: 1.3rem; }
@@ -272,6 +280,9 @@ html {
     font-size: 0.9rem;
     font-weight: normal;
     color: #454545; }
+    @media only screen and (max-width: 42rem) {
+      .projectsec__counter__text {
+        display: none; } }
     .projectsec__counter__text::after {
       content: '';
       display: inline-block;
@@ -297,6 +308,9 @@ html {
       font-size: 0.9rem;
       font-weight: normal;
       color: #454545; }
+      @media only screen and (max-width: 42rem) {
+        .projectsec__counter__text-last {
+          display: none; } }
 
 .card {
   background-color: white;
@@ -473,7 +487,8 @@ html {
       height: 3.5rem;
       border-radius: 50%; }
   .clientmsg__item__container {
-    position: relative; }
+    position: relative;
+    width: 100%; }
     .clientmsg__item__container-top {
       display: flex;
       align-items: center;

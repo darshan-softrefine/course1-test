@@ -31,6 +31,11 @@
     margin-right: auto;
     left: 14%;
 
+    @media only screen and (max-width:75rem) {
+
+        flex: 0 0 18%;
+    }
+
     &__input {
         font-family: inherit;
         background-color: $color-white;
@@ -343,6 +348,12 @@
 
     &__counter {
 
+        @media only screen and (max-width:42rem) {
+            background-color: #2BC8FF;
+            border-radius: 50%;
+            padding: 1rem;
+        }
+
         &__number {
             font-weight: 600;
             font-size: 1.3rem;
@@ -354,6 +365,11 @@
             font-size: 0.9rem;
             font-weight: normal;
             color: $heading-primary;
+
+            @media only screen and (max-width:42rem) {
+                display: none;
+            }
+
 
             &::after {
                 content: '';
@@ -385,6 +401,10 @@
                 font-size: 0.9rem;
                 font-weight: normal;
                 color: $heading-primary;
+
+                @media only screen and (max-width:42rem) {
+                    display: none;
+                }
             }
         }
     }
@@ -660,7 +680,6 @@
             padding: 1.5rem;
             align-items: center;
 
-
             &--img {
                 width: 3.5rem;
                 height: 3.5rem;
@@ -671,6 +690,7 @@
 
         &__container {
             position: relative;
+            width: 100%;
 
             &-top {
                 display: flex;
