@@ -253,6 +253,10 @@ html {
       @media only screen and (max-width: 70rem) {
         .projectsec__container__left {
           gap: 0.3rem !important; } }
+      @media only screen and (max-width: 42rem) {
+        .projectsec__container__left {
+          display: grid;
+          grid-template-columns: 1fr 1fr; } }
     .projectsec__container__right {
       display: flex;
       align-items: center;
