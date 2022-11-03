@@ -531,7 +531,8 @@ html {
 .chat-close-btn {
   border: none;
   position: absolute;
-  top: 0; }
+  top: 0;
+  background-color: transparent; }
   .chat-close-btn__icon {
     width: 2rem; }
 
