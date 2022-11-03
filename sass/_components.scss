@@ -711,3 +711,51 @@
 
 
 }
+
+.chatbtn {
+    width: 4.5rem;
+    border-radius: 50%;
+    background-color: #6dabc7;
+    padding: 1rem;
+    position: fixed;
+    bottom: 6rem;
+    right: 1rem;
+    border: none;
+    display: none;
+
+    &--icons {
+        stroke: $color-white;
+    }
+
+    @media only screen and (max-width:42rem) {
+        display: block;
+    }
+
+}
+
+
+.chat-container {
+    padding-top: 2rem;
+    height: 60%;
+    width: 80%;
+    z-index: 1;
+    background-color: #F2F6FE;
+    overflow-x: scroll;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    display: none;
+
+}
+
+.chat-close-btn {
+    border: none;
+    position: absolute;
+    top: 0;
+
+    &__icon {
+        width: 2rem;
+    }
+}

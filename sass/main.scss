@@ -35,6 +35,10 @@ body {
     display: flex;
     flex-wrap: wrap;
     gap: 3.5rem;
+
+    @media only screen and (max-width:42rem) {
+        padding-bottom: 4rem;
+    }
 }
 
 
@@ -76,5 +80,6 @@ body {
     @media only screen and (max-width:42rem) {
         grid-column: 1;
         grid-row: 3/4;
+        display: none;
     }
 }
