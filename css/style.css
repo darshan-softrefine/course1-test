@@ -39,9 +39,9 @@ html {
   position: relative;
   margin-right: auto;
   left: 14%; }
-  @media only screen and (max-width: 75rem) {
+  @media only screen and (max-width: 53rem) {
     .search {
-      flex: 0 0 18%; } }
+      visibility: hidden; } }
   .search__input {
     font-family: inherit;
     background-color: #ffffff;
@@ -99,6 +99,9 @@ html {
     height: 1.2rem;
     padding-top: 0.1rem; }
   @media only screen and (max-width: 42rem) {
+    .micon-container {
+      display: block; } }
+  @media only screen and (max-width: 53rem) {
     .micon-container {
       display: block; } }
 
@@ -311,6 +314,23 @@ html {
       @media only screen and (max-width: 42rem) {
         .projectsec__counter__text-last {
           display: none; } }
+  .projectsec__msg {
+    background-color: #2BC8FF;
+    border-radius: 2rem;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    display: none; }
+    @media only screen and (max-width: 42rem) {
+      .projectsec__msg {
+        position: relative;
+        top: -2rem;
+        display: flex;
+        align-items: center;
+        justify-content: center; } }
+    .projectsec__msg__icons {
+      width: 2rem; }
 
 .card {
   background-color: white;

@@ -31,9 +31,8 @@
     margin-right: auto;
     left: 14%;
 
-    @media only screen and (max-width:75rem) {
-
-        flex: 0 0 18%;
+    @media only screen and (max-width:53rem) {
+        visibility: hidden;
     }
 
     &__input {
@@ -112,6 +111,10 @@
     }
 
     @media only screen and (max-width: 42rem) {
+        display: block;
+    }
+
+    @media only screen and (max-width:53rem) {
         display: block;
     }
 }
@@ -406,6 +409,28 @@
                     display: none;
                 }
             }
+        }
+    }
+
+    &__msg {
+        background-color: #2BC8FF;
+        border-radius: 2rem;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        display: none;
+
+        @media only screen and (max-width:42rem) {
+            position: relative;
+            top: -2rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        &__icons {
+            width: 2rem;
         }
     }
 
