@@ -1,0 +1,14 @@
+{
+  "name": "sass-test-2",
+  "version": "1.0.0",
+  "description": "sass-test-2",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass": "node-sass sass/main.scss css/style.css -w"
+  },
+  "author": "darshn-patel",
+  "license": "ISC",
+  "devDependencies": {
+    "node-sass": "^7.0.3"
+  }
+}

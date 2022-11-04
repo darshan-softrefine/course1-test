@@ -1,0 +1,35 @@
+/* color code */
+/* new colour code */
+.middle-container {
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem; }
+
+.middle-attribute-icon {
+  width: 2rem; }
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif; }
+
+.container {
+  display: grid;
+  height: 100vh;
+  grid-template-columns: 70px 270px 1fr 1fr; }
+
+.navigation {
+  background-color: #ffffff; }
+
+.left-sidebar {
+  background-color: #f3ebe2; }
+
+.main {
+  background-color: aquamarine; }
+
+.right-sidebar {
+  background-color: blueviolet; }

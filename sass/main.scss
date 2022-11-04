@@ -1,0 +1,32 @@
+@import "base";
+@import "components";
+
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+.container {
+    display: grid;
+    height: 100vh;
+    grid-template-columns: 70px 270px 1fr 1fr;
+}
+
+.navigation {
+    background-color: $color-white;
+}
+
+.left-sidebar {
+    background-color: $left-sidebar-color;
+}
+
+.main {
+    background-color: aquamarine;
+}
+
+.right-sidebar {
+    background-color: blueviolet;
+}
