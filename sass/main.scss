@@ -29,9 +29,15 @@ body {
 }
 
 .main {
-    background-color: aquamarine;
+    background-color: $color-white;
+    padding: 2rem;
 }
 
 .right-sidebar {
     background-color: blueviolet;
+}
+
+.card-container {
+    display: flex;
+    gap: 1rem;
 }
