@@ -11,6 +11,28 @@
 .middle-attribute-icon {
   width: 2rem; }
 
+.question {
+  width: 1.2rem;
+  height: 1.2rem;
+  background-color: #1B182B;
+  border-radius: 50%;
+  padding: 0.5rem; }
+  .question__icon {
+    stroke: #FFFFFF; }
+
+.top {
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+  border: solid black 2px; }
+
+.left-sidebar__header {
+  padding: 1.5rem 0rem 1.5rem 1.5rem; }
+  .left-sidebar__header_primary {
+    margin: 0; }
+  .left-sidebar__header_secondary {
+    margin: 0; }
+
 body {
   margin: 0;
   padding: 0;
@@ -23,7 +45,12 @@ body {
   grid-template-columns: 70px 270px 1fr 1fr; }
 
 .navigation {
-  background-color: #ffffff; }
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem 0rem 1.5rem 0rem; }
 
 .left-sidebar {
   background-color: #f3ebe2; }

@@ -17,6 +17,11 @@ body {
 
 .navigation {
     background-color: $color-white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem 0rem 1.5rem 0rem;
 }
 
 .left-sidebar {
