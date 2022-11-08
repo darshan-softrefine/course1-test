@@ -175,9 +175,11 @@ https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js">
                 </button>
             </form>
 
-            <div class="section-heading">
-                <h3 class="heading-project">Recent Projects</h3>
-                <span class="view-all">View All</span>
+            <div>
+                <div class="section-heading">
+                    <h3 class="heading-project">Recent Projects</h3>
+                    <span class="view-all">View All</span>
+                </div>
             </div>
 
             <div class="card-container">
@@ -229,13 +231,99 @@ https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js">
                     </div>
                 </div>
             </div>
+
+            <div class="reminder-sec">
+                <h3>Reminders</h3>
+
+                <div class="recard-container">
+                    <div class="recard">
+                        <div class="recard__left">
+                            <div class="recard__left-inner">
+                                <span class="recard__left__sub">Tommorow, 16.00 - 18.00</span>
+                                <h3 class="recard__left__text">Discussion of the intern result of the project</h3>
+                            </div>
+                            <button class="recard__right__button">Set Reminder</button>
+                        </div>
+
+                    </div>
+
+                    <div class="recard">
+                        <div class="recard__left">
+                            <div class="record__left-inner">
+                                <span class="recard__left__sub">Tommorow, 16.00 - 18.00</span>
+                                <h3 class="recard__left__text">Second card description</h3>
+                            </div>
+                            <button class="recard__right__button">Review this</button>
+                        </div>
+                    </div>
+
+                    <div class="recard">
+                        <div class="recard__left">
+                            <div class="recard__left-inner">
+                                <span class="recard__left__sub">Tommorow, 16.00 - 18.00</span>
+                                <h3 class="recard__left__text">Third card description</h3>
+                            </div>
+                            <button class="recard__right__button">Review Today</button>
+                        </div>
+                    </div>
+
+                    <div class="dot-container">
+                        <span class="dot" onclick="currentSlide(1)"></span>
+                        <span class="dot" onclick="currentSlide(2)"></span>
+                        <span class="dot" onclick="currentSlide(3)"></span>
+                    </div>
+                </div>
+            </div>
         </div>
 
 
-        <div class="right-sidebar">right</div>
+        <div class="right-sidebar">
+
+            <div class="right-sidebar__topdot">
+                <span class="right-sidebar__topdot-dot"></span>
+                <span class="right-sidebar__topdot-dot"></span>
+                <span class="right-sidebar__topdot-dot"></span>
+            </div>
+
+            <div class="right-sidebar__header">
+                <button class="right-sidebar__header-button">Add Project</button>
+
+                <div class="right-sidebar__header__right">
+                    <div class="right-sidebar__header__notification">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                            stroke="currentColor" class="right-sidebar__header__notification-icon">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M14.857 17.082a23.848 23.848 0 005.454-1.31A8.967 8.967 0 0118 9.75v-.7V9A6 6 0 006 9v.75a8.967 8.967 0 01-2.312 6.022c1.733.64 3.56 1.085 5.455 1.31m5.714 0a24.255 24.255 0 01-5.714 0m5.714 0a3 3 0 11-5.714 0" />
+                        </svg>
+                    </div>
+
+                    <div class="right-sidebar__header__user">
+                        <img src="/img/customer-1.jpg" alt="" class="right-sidebar__header__user__img">
+                        <div>
+                            <span class="right-sidebar__header__user-top">User</span>
+                            <h4 class="right-sidebar__header__user-name">Maria</h4>
+                        </div>
+                    </div>
+
+                    <div class="right-sidebar__header__last">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                            stroke="currentColor" class="right-sidebar__header__last-icon">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
+                        </svg>
+
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="right-sidebar__team">
+                <h3 class="right-sidebar__team__title">Team Members</h3>
+            </div>
+        </div>
     </div>
 
     <script>
+
         var acc = document.getElementsByClassName("left-sidebar__main-collapsible");
         var i;
 
@@ -266,6 +354,29 @@ https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js">
         window.onload = function () {
             openme();
         };
+
+        let slideIndex = 1;
+        showSlides(slideIndex);
+
+        function currentSlide(n) {
+            showSlides(slideIndex = n);
+        }
+
+        function showSlides(n) {
+            let i;
+            let slides = document.getElementsByClassName("recard");
+            let dots = document.getElementsByClassName("dot");
+            if (n > slides.length) { slideIndex = 1 }
+            if (n < 1) { slideIndex = slides.length }
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex - 1].style.display = "block";
+            dots[slideIndex - 1].className += " active";
+        }
 
     </script>
 </body>

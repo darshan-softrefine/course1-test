@@ -119,6 +119,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-bottom: 1.5rem;
 
     &__input {
         font-family: inherit;
@@ -272,6 +273,177 @@
             align-self: flex-start;
             color: $card-ternary-color;
             font-size: 0.9rem;
+        }
+    }
+}
+
+
+/* reminder card */
+
+.recard-container {
+    width: 100%;
+    background-color: $color-white;
+    border: solid 2px;
+    border-radius: 1.5rem;
+    border-color: $reminder-border;
+}
+
+.recard {
+    padding: 2rem 2rem 0rem 2rem;
+    display: none;
+
+    &__left {
+
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        &-inner {
+            flex: 60% 0;
+        }
+
+        &__sub {
+            font-size: 0.9rem;
+        }
+
+        &__text {
+            margin: 0;
+            color: $heading-color-primary;
+        }
+    }
+
+    &__right {
+
+
+        &__button {
+            border: dotted $seffron-color 1px;
+            border-radius: 2rem;
+            padding: 0.5rem 1rem 0.5rem 1rem;
+            background-color: transparent;
+        }
+    }
+}
+
+.dot-container {
+    display: flex;
+    gap: 0.2rem;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+}
+
+.dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: $card-first-color;
+
+    &:active {
+        background-color: black;
+    }
+
+    &:hover {
+        background-color: $card-ternary-color;
+    }
+}
+
+
+/* right sidebar */
+
+.right-sidebar {
+
+    padding: 2rem 1.5rem 2rem 2rem;
+
+    &__topdot {
+        display: flex;
+        justify-content: flex-end;
+        gap: 0.3rem;
+        margin: 1rem 0rem 1rem 0rem;
+
+        &-dot {
+            width: 8px;
+            height: 8px;
+            border-radius: 50%;
+            background-color: #fcbda3;
+        }
+    }
+
+    /* below is header */
+
+    &__header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        &__right {
+            display: flex;
+            gap: 1rem;
+            align-items: center;
+        }
+
+        &-button {
+            background-color: $seffron-color;
+            border-radius: 2rem;
+            color: $color-white;
+            border: none;
+            padding: 0.7rem 1.3rem 0.7rem 1.3rem;
+        }
+
+        &__notification {
+
+
+            &-icon {
+                width: 1.7rem;
+            }
+        }
+
+        &__user {
+
+            display: flex;
+            gap: 0.5rem;
+            align-items: center;
+
+            &__img {
+                width: 2.2rem;
+                height: 2.2rem;
+                border-radius: 50%;
+            }
+
+            &-top {
+                margin: 0;
+                margin: 0;
+                font-size: 0.7rem;
+                color: $r-sidebar-text-color;
+            }
+
+            &-name {
+                margin: 0;
+                font-size: 0.8rem;
+            }
+        }
+
+        &__last {
+            width: 1rem;
+            height: 1rem;
+            background-color: #F6F2EC;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            &-icon {
+                stroke: $seffron-color;
+                width: 0.7rem;
+            }
+        }
+    }
+
+    /* below is team */
+
+    &__team {
+
+        &__title {
+            margin: 0;
         }
     }
 }
