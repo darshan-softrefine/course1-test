@@ -246,7 +246,8 @@
   .right-sidebar__header {
     display: flex;
     align-items: center;
-    justify-content: space-between; }
+    justify-content: space-between;
+    margin-bottom: 3.2rem; }
     .right-sidebar__header__right {
       display: flex;
       gap: 1rem;
@@ -286,8 +287,84 @@
       .right-sidebar__header__last-icon {
         stroke: #F0884E;
         width: 0.7rem; }
-  .right-sidebar__team__title {
-    margin: 0; }
+  .right-sidebar__team {
+    margin-bottom: 2rem; }
+    .right-sidebar__team__title {
+      margin: 0rem 0rem 0.8rem 0rem; }
+    .right-sidebar__team__image {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem; }
+      .right-sidebar__team__image-img {
+        width: 3rem;
+        height: 3rem;
+        border-radius: 50%; }
+        .right-sidebar__team__image-img-jr {
+          background-color: #FCF2E0;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          color: #F0884E; }
+      .right-sidebar__team__image-last {
+        width: 1.8rem;
+        height: 1.8rem;
+        background-color: #F6F2EC;
+        border-radius: 50%;
+        border: dotted 1px;
+        display: flex;
+        align-items: center;
+        justify-content: center; }
+        .right-sidebar__team__image-last-icon {
+          stroke: #F0884E;
+          width: 1.5rem;
+          height: 1.5rem; }
+  .right-sidebar__counter {
+    display: flex;
+    gap: 1.5rem;
+    border-radius: 1rem;
+    padding: 1.5rem 1rem 1.5rem 1rem;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px;
+    margin-bottom: 2rem; }
+    .right-sidebar__counter__item-title {
+      margin: 0;
+      font-size: 0.7rem;
+      color: #777575; }
+    .right-sidebar__counter__item-number {
+      margin: 0;
+      font-size: 1.1rem; }
+  .right-sidebar__dtask__header {
+    display: flex;
+    justify-content: space-between; }
+    .right-sidebar__dtask__header__title {
+      margin: 0; }
+    .right-sidebar__dtask__header__edit {
+      font-size: 0.9rem;
+      color: #F0884E;
+      align-items: flex-end; }
+  .right-sidebar__dtask__container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem; }
+  .right-sidebar__card {
+    border-radius: 0.7rem;
+    background-color: #F0884E;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px; }
+    .right-sidebar__card:nth-child(1) {
+      background-color: #F6F1EB; }
+    .right-sidebar__card:nth-child(2) {
+      background-color: #ffffff; }
+    .right-sidebar__card:nth-child(3) {
+      background-color: #ffffff; }
+    .right-sidebar__card__dot {
+      width: 1rem;
+      height: 1rem;
+      border-radius: 50%;
+      background-color: #F0884E; }
+    .right-sidebar__card__text {
+      font-size: 0.9rem;
+      font-weight: 500; }
+    .right-sidebar__card__icon {
+      width: 1.2rem; }
 
 body {
   margin: 0;

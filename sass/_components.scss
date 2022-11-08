@@ -374,6 +374,7 @@
         display: flex;
         align-items: center;
         justify-content: space-between;
+        margin-bottom: 3.2rem;
 
         &__right {
             display: flex;
@@ -441,9 +442,131 @@
     /* below is team */
 
     &__team {
+        margin-bottom: 2rem;
 
         &__title {
-            margin: 0;
+            margin: 0rem 0rem 0.8rem 0rem;
+        }
+
+        &__image{
+
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+
+            &-img{
+                width: 3rem;
+                height: 3rem;
+                border-radius: 50%;
+
+                &-jr{
+                    background-color:#FCF2E0;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    color: $seffron-color;
+                }
+            }
+
+            &-last{
+                width: 1.8rem;
+                height: 1.8rem;
+                background-color: #F6F2EC;
+                border-radius: 50%;
+                border: dotted 1px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                &-icon{
+                    stroke: $seffron-color;
+                    width: 1.5rem;
+                    height: 1.5rem;
+                }
+            }
+        }
+    }
+
+    &__counter{
+        display: flex;
+        gap: 1.5rem;
+        border-radius: 1rem;
+        padding: 1.5rem 1rem 1.5rem 1rem;
+        box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px;
+        //box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px; 
+        margin-bottom: 2rem;
+        
+
+        &__item{
+
+            &-title{
+                margin: 0;
+                font-size: 0.7rem;
+                color: $r-sidebar-text-color;
+            }
+
+            &-number{
+                margin: 0;
+                font-size: 1.1rem;
+            }
+        }
+    }
+
+    &__dtask{
+
+        &__header{
+            display: flex;
+            justify-content: space-between;
+
+            &__title{
+                margin: 0;
+            }
+
+            &__edit{
+                font-size: 0.9rem;
+                color: $seffron-color;
+                align-items: flex-end;
+            }
+        }
+
+        &__container{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1rem;
+        }
+    }
+
+    &__card{
+        border-radius: 0.7rem;
+        background-color: $seffron-color;
+        box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+
+        &:nth-child(1){
+            background-color: #F6F1EB;
+        }
+
+        &:nth-child(2){
+            background-color: $color-white;
+        }
+
+        &:nth-child(3){
+            background-color: $color-white;
+        }
+
+        &__dot{
+            width: 1rem;
+            height: 1rem;
+            border-radius: 50%;
+            background-color: $seffron-color;
+        }
+
+        &__text{
+            font-size: 0.9rem;
+            font-weight: 500;
+        }
+
+        &__icon{
+            width: 1.2rem;
         }
     }
 }
