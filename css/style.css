@@ -334,7 +334,8 @@
       font-size: 1.1rem; }
   .right-sidebar__dtask__header {
     display: flex;
-    justify-content: space-between; }
+    justify-content: space-between;
+    margin-bottom: 0.5rem; }
     .right-sidebar__dtask__header__title {
       margin: 0; }
     .right-sidebar__dtask__header__edit {
@@ -346,25 +347,61 @@
     grid-template-columns: 1fr 1fr;
     gap: 1rem; }
   .right-sidebar__card {
+    height: 7.5rem;
     border-radius: 0.7rem;
     background-color: #F0884E;
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px; }
     .right-sidebar__card:nth-child(1) {
-      background-color: #F6F1EB; }
+      background-color: #F6F1EB;
+      position: relative; }
     .right-sidebar__card:nth-child(2) {
-      background-color: #ffffff; }
+      background-color: #ffffff;
+      position: relative;
+      overflow: hidden; }
     .right-sidebar__card:nth-child(3) {
       background-color: #ffffff; }
-    .right-sidebar__card__dot {
-      width: 1rem;
-      height: 1rem;
-      border-radius: 50%;
-      background-color: #F0884E; }
+    .right-sidebar__card__top {
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      gap: 0.2rem;
+      padding: 0.5rem; }
+      .right-sidebar__card__top__dot {
+        width: 0.5rem;
+        height: 0.5rem;
+        border-radius: 50%;
+        background-color: #F0884E; }
+        .right-sidebar__card__top__dot-second {
+          background-color: #FF6161; }
+        .right-sidebar__card__top__dot-third {
+          background-color: #04CCB4; }
+        .right-sidebar__card__top__dot-fourth {
+          background-color: #ffffff; }
+      .right-sidebar__card__top__text {
+        font-size: 0.7rem; }
     .right-sidebar__card__text {
       font-size: 0.9rem;
-      font-weight: 500; }
+      margin: 0;
+      padding: 0rem 1.2rem 0rem 1.2rem; }
+      .right-sidebar__card__text-first {
+        padding: 1.2rem; }
     .right-sidebar__card__icon {
-      width: 1.2rem; }
+      width: 1.2rem;
+      position: absolute;
+      bottom: 1rem;
+      right: 1.2rem; }
+    .right-sidebar__card__svg1 {
+      position: absolute;
+      right: -20px;
+      transform: rotate(342deg);
+      bottom: -11px;
+      width: 10rem;
+      height: 3rem; }
+    .right-sidebar__card__svg2 {
+      position: absolute;
+      right: -20px;
+      transform: rotate(348deg);
+      bottom: -5px; }
 
 body {
   margin: 0;

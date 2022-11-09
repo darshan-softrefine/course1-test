@@ -448,19 +448,19 @@
             margin: 0rem 0rem 0.8rem 0rem;
         }
 
-        &__image{
+        &__image {
 
             display: flex;
             align-items: center;
             gap: 0.5rem;
 
-            &-img{
+            &-img {
                 width: 3rem;
                 height: 3rem;
                 border-radius: 50%;
 
-                &-jr{
-                    background-color:#FCF2E0;
+                &-jr {
+                    background-color: #FCF2E0;
                     display: flex;
                     align-items: center;
                     justify-content: center;
@@ -468,7 +468,7 @@
                 }
             }
 
-            &-last{
+            &-last {
                 width: 1.8rem;
                 height: 1.8rem;
                 background-color: #F6F2EC;
@@ -478,7 +478,7 @@
                 align-items: center;
                 justify-content: center;
 
-                &-icon{
+                &-icon {
                     stroke: $seffron-color;
                     width: 1.5rem;
                     height: 1.5rem;
@@ -487,7 +487,7 @@
         }
     }
 
-    &__counter{
+    &__counter {
         display: flex;
         gap: 1.5rem;
         border-radius: 1rem;
@@ -495,78 +495,138 @@
         box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px;
         //box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px; 
         margin-bottom: 2rem;
-        
 
-        &__item{
 
-            &-title{
+        &__item {
+
+            &-title {
                 margin: 0;
                 font-size: 0.7rem;
                 color: $r-sidebar-text-color;
             }
 
-            &-number{
+            &-number {
                 margin: 0;
                 font-size: 1.1rem;
             }
         }
     }
 
-    &__dtask{
+    &__dtask {
 
-        &__header{
+        &__header {
             display: flex;
             justify-content: space-between;
+            margin-bottom: 0.5rem;
 
-            &__title{
+            &__title {
                 margin: 0;
             }
 
-            &__edit{
+            &__edit {
                 font-size: 0.9rem;
                 color: $seffron-color;
                 align-items: flex-end;
             }
         }
 
-        &__container{
+        &__container {
             display: grid;
             grid-template-columns: 1fr 1fr;
             gap: 1rem;
         }
     }
 
-    &__card{
+    &__card {
+        height: 7.5rem;
         border-radius: 0.7rem;
         background-color: $seffron-color;
         box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 
-        &:nth-child(1){
+        &:nth-child(1) {
             background-color: #F6F1EB;
+            position: relative;
+
         }
 
-        &:nth-child(2){
+        &:nth-child(2) {
+            background-color: $color-white;
+            position: relative;
+            overflow: hidden;
+        }
+
+        &:nth-child(3) {
             background-color: $color-white;
         }
 
-        &:nth-child(3){
-            background-color: $color-white;
+        &__top {
+
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+            gap: 0.2rem;
+            padding: 0.5rem;
+
+            &__dot {
+                width: 0.5rem;
+                height: 0.5rem;
+                border-radius: 50%;
+                background-color: $seffron-color;
+
+                &-second {
+                    background-color: #FF6161;
+                }
+
+                &-third {
+                    background-color: #04CCB4;
+                }
+
+                &-fourth {
+                    background-color: $color-white;
+                }
+            }
+
+            &__text {
+                font-size: 0.7rem;
+            }
+
+            &__check {}
+
         }
 
-        &__dot{
-            width: 1rem;
-            height: 1rem;
-            border-radius: 50%;
-            background-color: $seffron-color;
-        }
 
-        &__text{
+
+        &__text {
             font-size: 0.9rem;
-            font-weight: 500;
+            margin: 0;
+            padding: 0rem 1.2rem 0rem 1.2rem;
+
+            &-first {
+                padding: 1.2rem;
+            }
         }
 
-        &__icon{
+        &__icon {
             width: 1.2rem;
+            position: absolute;
+            bottom: 1rem;
+            right: 1.2rem;
+        }
+
+        &__svg1 {
+            position: absolute;
+            right: -20px;
+            transform: rotate(342deg);
+            bottom: -11px;
+            width: 10rem;
+            height: 3rem;
+        }
+
+        &__svg2 {
+            position: absolute;
+            right: -20px;
+            transform: rotate(348deg);
+            bottom: -5px;
         }
     }
 }
