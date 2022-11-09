@@ -359,7 +359,9 @@
       position: relative;
       overflow: hidden; }
     .right-sidebar__card:nth-child(3) {
-      background-color: #ffffff; }
+      background-color: #ffffff;
+      overflow: hidden;
+      position: relative; }
     .right-sidebar__card__top {
       display: flex;
       align-items: center;
@@ -392,16 +394,39 @@
       right: 1.2rem; }
     .right-sidebar__card__svg1 {
       position: absolute;
-      right: -20px;
       transform: rotate(342deg);
-      bottom: -11px;
-      width: 10rem;
-      height: 3rem; }
+      bottom: 7px; }
     .right-sidebar__card__svg2 {
       position: absolute;
       right: -20px;
       transform: rotate(348deg);
       bottom: -5px; }
+    .right-sidebar__card__rect__first {
+      width: 0.8rem;
+      height: 2rem;
+      background-color: transparent;
+      border: #F0884E solid 2px;
+      bottom: 1.2rem;
+      position: absolute;
+      transform: rotate(62deg); }
+    .right-sidebar__card__rect__second {
+      width: 1rem;
+      height: 4rem;
+      background-color: transparent;
+      border: #F0884E solid 2px;
+      transform: rotate(62deg);
+      bottom: -1.5rem;
+      position: absolute; }
+    .right-sidebar__card__rect__third {
+      width: 1rem;
+      height: 3rem;
+      background-color: transparent;
+      border: #F0884E solid 2px;
+      transform: rotate(62deg);
+      bottom: -1.5rem;
+      position: absolute;
+      right: 6rem;
+      bottom: -2rem; }
 
 body {
   margin: 0;
@@ -439,3 +464,20 @@ body {
 
 .reminder-sec {
   margin-top: 1rem; }
+
+.right-sidebar__card input {
+  display: none; }
+
+.right-sidebar__card label span {
+  height: 10px;
+  width: 10px;
+  border: 1.5px solid #F0884E;
+  display: inline-block;
+  position: relative;
+  border-radius: 0.2rem; }
+
+[type=checkbox]:checked + span:before {
+  content: '\2714';
+  position: absolute;
+  top: -5px;
+  left: 0; }
