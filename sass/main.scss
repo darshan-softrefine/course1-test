@@ -13,6 +13,12 @@ body {
     display: grid;
     height: 100vh;
     grid-template-columns: 70px 270px 1fr 1fr;
+
+
+    @media only screen and (max-width: $mobilescreen) {
+        grid-template-columns: 1fr;
+        grid-template-rows: 100px 150px 1fr 1fr;
+    }
 }
 
 .navigation {
@@ -21,21 +27,40 @@ body {
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    padding: 1.5rem 0rem 1.5rem 0rem;
+    /* padding: 1.5rem 0rem 1.5rem 0rem; */
+    padding: 1rem 0rem 1.5rem 0rem;
+
+    @media only screen and (max-width: $mobilescreen) {
+        grid-row: 1/2;
+        flex-direction: row;
+        justify-content: space-around;
+    }
 }
 
 .left-sidebar {
     background-color: $left-sidebar-color;
+
+    @media only screen and (max-width: $mobilescreen) {
+        grid-row: 2/3;
+    }
 }
 
 .main {
     background-color: $color-white;
-    padding: 2rem;
+    padding: 1rem 2rem 2rem 2rem;
+
+    @media only screen and (max-width: $mobilescreen) {
+        grid-row: 3/4;
+    }
 }
 
 .right-sidebar {
     background-color: $color-white;
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+
+    @media only screen and (max-width: $mobilescreen) {
+        grid-row: 4/5;
+    }
 }
 
 .card-container {

@@ -5,6 +5,10 @@
     flex-direction: column;
     align-items: center;
     gap: 1rem;
+
+    @media only screen and (max-width: $mobilescreen) {
+        flex-direction: row;
+    }
 }
 
 .middle-attribute {
@@ -39,7 +43,7 @@
 .left-sidebar {
 
     &__header {
-        padding: 1.5rem 0rem 1rem 1.5rem;
+        padding: 1rem 0rem 1rem 1.5rem;
         border-bottom: solid #d0ccc6 1px;
 
 
@@ -108,6 +112,8 @@
 
 .heading-project {
     color: $text-color;
+    margin: 0;
+    margin-bottom: 0.7rem;
 }
 
 .view-all {
@@ -352,7 +358,7 @@
 
 .right-sidebar {
 
-    padding: 2rem 1.5rem 2rem 2rem;
+    padding: 1rem 1.5rem 2rem 2rem;
 
     &__topdot {
         display: flex;
@@ -374,7 +380,7 @@
         display: flex;
         align-items: center;
         justify-content: space-between;
-        margin-bottom: 3.2rem;
+        margin-bottom: 2rem;
 
         &__right {
             display: flex;
@@ -491,10 +497,10 @@
         display: flex;
         gap: 1.5rem;
         border-radius: 1rem;
-        padding: 1.5rem 1rem 1.5rem 1rem;
+        /* padding: 1.5rem 1rem 1.5rem 1rem; */
+        padding: 1rem 1rem 1.2rem 1rem;
         box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px;
-        //box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px; 
-        margin-bottom: 2rem;
+        margin-bottom: 1.5rem;
 
 
         &__item {
