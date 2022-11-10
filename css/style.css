@@ -362,6 +362,8 @@
       background-color: #ffffff;
       overflow: hidden;
       position: relative; }
+    .right-sidebar__card:nth-child(4) {
+      overflow: hidden; }
     .right-sidebar__card__top {
       display: flex;
       align-items: center;
@@ -387,6 +389,12 @@
       padding: 0rem 1.2rem 0rem 1.2rem; }
       .right-sidebar__card__text-first {
         padding: 1.2rem; }
+      .right-sidebar__card__text-fourth {
+        color: #ffffff; }
+    .right-sidebar__card__circle {
+      fill: none;
+      stroke-dashoffset: 0;
+      stroke: #ffffff; }
     .right-sidebar__card__icon {
       width: 1.2rem;
       position: absolute;
@@ -411,11 +419,11 @@
       transform: rotate(62deg); }
     .right-sidebar__card__rect__second {
       width: 1rem;
-      height: 4rem;
+      height: 6rem;
       background-color: transparent;
       border: #F0884E solid 2px;
       transform: rotate(62deg);
-      bottom: -1.5rem;
+      bottom: -2.5rem;
       position: absolute; }
     .right-sidebar__card__rect__third {
       width: 1rem;
@@ -425,8 +433,8 @@
       transform: rotate(62deg);
       bottom: -1.5rem;
       position: absolute;
-      right: 6rem;
-      bottom: -2rem; }
+      bottom: -2rem;
+      left: 2rem; }
 
 body {
   margin: 0;

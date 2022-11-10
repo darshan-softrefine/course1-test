@@ -561,6 +561,10 @@
             position: relative;
         }
 
+        &:nth-child(4) {
+            overflow: hidden;
+        }
+
         &__top {
 
             display: flex;
@@ -606,6 +610,16 @@
             &-first {
                 padding: 1.2rem;
             }
+
+            &-fourth {
+                color: $color-white;
+            }
+        }
+
+        &__circle {
+            fill: none;
+            stroke-dashoffset: 0;
+            stroke: $color-white;
         }
 
         &__icon {
@@ -629,9 +643,9 @@
         }
 
 
-        &__rect{
+        &__rect {
 
-            &__first{
+            &__first {
                 width: 0.8rem;
                 height: 2rem;
                 background-color: transparent;
@@ -642,17 +656,17 @@
 
             }
 
-            &__second{
-                width: 1rem; 
-                height: 4rem; 
-                background-color: transparent; 
-                border: #F0884E solid 2px; 
-                transform: rotate(62deg); 
-                bottom: -1.5rem; 
-                position: absolute; 
+            &__second {
+                width: 1rem;
+                height: 6rem;
+                background-color: transparent;
+                border: #F0884E solid 2px;
+                transform: rotate(62deg);
+                bottom: -2.5rem;
+                position: absolute;
             }
 
-            &__third{
+            &__third {
                 width: 1rem;
                 height: 3rem;
                 background-color: transparent;
@@ -660,9 +674,11 @@
                 transform: rotate(62deg);
                 bottom: -1.5rem;
                 position: absolute;
-                right: 6rem;
                 bottom: -2rem;
+                left: 2rem
             }
         }
-    }   
+
+
+    }
 }

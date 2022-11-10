@@ -399,6 +399,10 @@ https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js">
                         <div class="right-sidebar__card__top">
                             <span class="right-sidebar__card__top__dot right-sidebar__card__top__dot-third"></span>
                             <span class="right-sidebar__card__top__text">In Progress</span>
+                            <label>
+                                <input type='checkbox' id="check2">
+                                <span></span>
+                            </label>
                         </div>
                         <p class="right-sidebar__card__text">Make prototype for mobile version</p>
                         <div class="right-sidebar__card__rect">
@@ -412,9 +416,18 @@ https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js">
                         <div class="right-sidebar__card__top">
                             <span class="right-sidebar__card__top__dot right-sidebar__card__top__dot-fourth"></span>
                             <span class="right-sidebar__card__top__text">Done</span>
+
+                            <label>
+                                <input type='checkbox' id="check3">
+                                <span></span>
+                            </label>
                         </div>
-                        <p class="right-sidebar__card__text">Make Fixes in homepage</p>
-                        <div></div>
+                        <p class="right-sidebar__card__text right-sidebar__card__text-fourth">Make Fixes in homepage</p>
+                        <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="75" cy="12" r="10" class="right-sidebar__card__circle" />
+                            <circle cx="60" cy="34" r="8" class="right-sidebar__card__circle" />
+                            <circle cx="90" cy="32" r="8" class="right-sidebar__card__circle" />
+                        </svg>
                     </div>
                 </div>
             </div>
@@ -477,8 +490,18 @@ https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js">
             dots[slideIndex - 1].className += " active";
         }
 
-        function testcheck(){
-            document.getElementsByClassName("right-sidebar__card")[1].style.backgroundColor = "#F6F1EB";
+        function testcheck() {
+
+            var checkBox = document.getElementById('check1');
+
+            if (checkBox.checked == true) {
+
+                document.getElementsByClassName("right-sidebar__card")[1].style.backgroundColor = "#F6F1EB";
+            } else {
+                document.getElementsByClassName("right-sidebar__card")[1].style.backgroundColor = "#FFFFFF";
+            }
+
+
         }
 
     </script>
