@@ -369,6 +369,10 @@ https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js">
                         <div class="right-sidebar__card__top">
                             <span class="right-sidebar__card__top__dot right-sidebar__card__top__dot-second"></span>
                             <span class="right-sidebar__card__top__text">New</span>
+                            <label>
+                                <input type='checkbox' id="check1" onclick="testcheck()">
+                                <span></span>
+                            </label>
                         </div>
 
                         <p class="right-sidebar__card__text">Change color palette to more bright</p>
@@ -397,6 +401,11 @@ https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js">
                             <span class="right-sidebar__card__top__text">In Progress</span>
                         </div>
                         <p class="right-sidebar__card__text">Make prototype for mobile version</p>
+                        <div class="right-sidebar__card__rect">
+                            <div class="right-sidebar__card__rect__first"></div>
+                            <div class="right-sidebar__card__rect__second"></div>
+                            <div class="right-sidebar__card__rect__third"></div>
+                        </div>
                     </div>
 
                     <div class="right-sidebar__card">
@@ -466,6 +475,10 @@ https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js">
             }
             slides[slideIndex - 1].style.display = "block";
             dots[slideIndex - 1].className += " active";
+        }
+
+        function testcheck(){
+            document.getElementsByClassName("right-sidebar__card")[1].style.backgroundColor = "#F6F1EB";
         }
 
     </script>

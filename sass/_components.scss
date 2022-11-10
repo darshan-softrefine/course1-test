@@ -557,6 +557,8 @@
 
         &:nth-child(3) {
             background-color: $color-white;
+            overflow: hidden;
+            position: relative;
         }
 
         &__top {
@@ -615,11 +617,8 @@
 
         &__svg1 {
             position: absolute;
-            right: -20px;
             transform: rotate(342deg);
-            bottom: -11px;
-            width: 10rem;
-            height: 3rem;
+            bottom: 7px;
         }
 
         &__svg2 {
@@ -628,5 +627,42 @@
             transform: rotate(348deg);
             bottom: -5px;
         }
-    }
+
+
+        &__rect{
+
+            &__first{
+                width: 0.8rem;
+                height: 2rem;
+                background-color: transparent;
+                border: #F0884E solid 2px;
+                bottom: 1.2rem;
+                position: absolute;
+                transform: rotate(62deg);
+
+            }
+
+            &__second{
+                width: 1rem; 
+                height: 4rem; 
+                background-color: transparent; 
+                border: #F0884E solid 2px; 
+                transform: rotate(62deg); 
+                bottom: -1.5rem; 
+                position: absolute; 
+            }
+
+            &__third{
+                width: 1rem;
+                height: 3rem;
+                background-color: transparent;
+                border: #F0884E solid 2px;
+                transform: rotate(62deg);
+                bottom: -1.5rem;
+                position: absolute;
+                right: 6rem;
+                bottom: -2rem;
+            }
+        }
+    }   
 }
