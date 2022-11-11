@@ -59,6 +59,10 @@
 
     &__main {
 
+        @media only screen and (max-width: $mobilescreen) {
+            display: none;
+        }
+
         &-collapsible {
             background-color: #f3ebe2;
             color: $text-color;
@@ -98,6 +102,52 @@
 
         }
 
+
+    }
+
+
+    &__mobile {
+
+        display: none;
+
+        &__subnav {
+            border: none;
+
+            &:hover &-content {
+                background-color: $card-first-color;
+                display: block;
+            }
+
+            &-btn {
+                font-size: 16px;
+                border: none;
+                outline: none;
+                color: $black-color;
+                padding: 14px 16px;
+                background-color: inherit;
+                margin: 0;
+            }
+
+            &-content {
+                display: none;
+                position: absolute;
+                width: 100%;
+                z-index: 1;
+                left: 0;
+                padding: 0.2rem;
+
+                & a {
+                    text-decoration: none;
+                    color: $black-color;
+                    padding: 14px 16px;
+                }
+            }
+        }
+
+        @media only screen and (max-width: $mobilescreen) {
+            display: block;
+            display: flex;
+        }
 
     }
 }
