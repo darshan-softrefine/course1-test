@@ -75,9 +75,6 @@
   display: none; }
   .left-sidebar__mobile__subnav {
     border: none; }
-    .left-sidebar__mobile__subnav:hover .left-sidebar__mobile__subnav-content {
-      background-color: #fcbda3;
-      display: block; }
     .left-sidebar__mobile__subnav-btn {
       font-size: 16px;
       border: none;
@@ -86,17 +83,6 @@
       padding: 14px 16px;
       background-color: inherit;
       margin: 0; }
-    .left-sidebar__mobile__subnav-content {
-      display: none;
-      position: absolute;
-      width: 100%;
-      z-index: 1;
-      left: 0;
-      padding: 0.2rem; }
-      .left-sidebar__mobile__subnav-content a {
-        text-decoration: none;
-        color: #000000;
-        padding: 14px 16px; }
   @media only screen and (max-width: 48rem) {
     .left-sidebar__mobile {
       display: block;
@@ -487,7 +473,7 @@ body {
 .container {
   display: grid;
   height: 100vh;
-  grid-template-columns: 70px 270px 1fr 1fr; }
+  grid-template-columns: 70px 270px 550px 1fr; }
   @media only screen and (max-width: 48rem) {
     .container {
       grid-template-columns: 1fr;
